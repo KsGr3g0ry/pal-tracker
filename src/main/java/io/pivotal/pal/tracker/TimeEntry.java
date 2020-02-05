@@ -1,19 +1,7 @@
 package io.pivotal.pal.tracker;
 
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.ResultSetExtractor;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
-
-import javax.sql.DataSource;
-import java.sql.Date;
-import java.sql.PreparedStatement;
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Objects;
-
-import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
 public class TimeEntry {
     private final long id;
@@ -74,5 +62,3 @@ public class TimeEntry {
                 '}';
     }
 }
-
-
